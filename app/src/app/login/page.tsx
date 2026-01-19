@@ -1,13 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { motion } from "framer-motion";
 import { Camera, Mail, Lock, User, ArrowRight, Loader2 } from "lucide-react";
 import { useAuth } from "@/lib/auth-context";
 import { useRouter, useSearchParams } from "next/navigation";
 import { appTranslations, AppLanguage, getStoredLanguage, setStoredLanguage } from "@/lib/translations";
 
-export default function LoginPage() {
+function LoginContent() {
     const [mode, setMode] = useState<"login" | "signup">("login");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
@@ -213,5 +213,17 @@ export default function LoginPage() {
                 {t.login.termsNotice}
             </p>
         </div>
+    );
+}
+
+export default function LoginPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center aurora-bg">
+                <Loader2 className="w-8 h-8 animate-spin text-white" />
+            </div>
+        }>
+            <LoginContent />
+        </Suspense>
     );
 }
