@@ -13,18 +13,18 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sitesnap.ai"),
-  title: "SiteSnap AI - Organiza tus fotos de obra automáticamente | Evidencia GPS",
-  description: "App para técnicos, instaladores y contratistas. Captura fotos con GPS, organízalas automáticamente en TU Google Drive. Prueba legal instantánea. Desde 9€/mes.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://sitesnap.vercel.app"),
+  title: "SiteSnap AI - Organize your site photos automatically | GPS Evidence",
+  description: "App for technicians, installers and contractors. Capture photos with GPS, organize them automatically in YOUR Google Drive. Instant legal evidence. From $29/month.",
   keywords: [
-    "app fotos obra",
-    "gestión fotos instaladores",
-    "alternativa CompanyCam español",
-    "evidencia visual GPS contratistas",
-    "fotos técnicos campo",
-    "documentar instalaciones",
-    "prueba entrega servicio",
-    "app contratistas España",
+    "app site photos",
+    "installer photo management",
+    "CompanyCam alternative",
+    "GPS visual evidence contractors",
+    "field technician photos",
+    "documenting installations",
+    "proof of delivery service",
+    "contractor app",
   ],
   authors: [{ name: "SiteSnap AI" }],
   creator: "SiteSnap AI",
@@ -36,24 +36,24 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "es_ES",
-    url: "https://sitesnap.ai",
+    locale: "en_US",
+    url: "https://sitesnap.vercel.app",
     siteName: "SiteSnap AI",
-    title: "SiteSnap AI - Organiza tus fotos de obra automáticamente",
-    description: "Captura fotos con GPS, organízalas en TU Google Drive. Evidencia legal para técnicos. Desde 9€/mes.",
+    title: "SiteSnap AI - Organize your site photos automatically",
+    description: "Capture photos with GPS, organize them in YOUR Google Drive. Legal evidence for technicians. From $29/month.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "SiteSnap AI - App para técnicos de campo",
+        alt: "SiteSnap AI - App for field technicians",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SiteSnap AI - Organiza tus fotos de obra automáticamente",
-    description: "Captura fotos con GPS, organízalas en TU Google Drive. Desde 9€/mes.",
+    title: "SiteSnap AI - Organize your site photos automatically",
+    description: "Capture photos with GPS, organize them in YOUR Google Drive. From $29/month.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://sitesnap.ai",
+    canonical: "https://sitesnap.vercel.app",
   },
 };
 

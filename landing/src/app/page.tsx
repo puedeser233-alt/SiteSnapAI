@@ -49,7 +49,8 @@ const scaleIn = {
 const CONTACT_EMAIL = "sergioesquesi@gmail.com";
 
 // App base URL
-const APP_URL = "http://localhost:3001";
+// App base URL - Use production URL in production, localhost in development
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://sitesnap-app.vercel.app";
 
 export default function Home() {
   // Default to English - this is the primary language
