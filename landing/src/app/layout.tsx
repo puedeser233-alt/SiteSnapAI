@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://sitesnap.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://sitesnapgps.com"),
   title: "SiteSnap AI - Organize your site photos automatically | GPS Evidence",
   description: "App for technicians, installers and contractors. Capture photos with GPS, organize them automatically in YOUR Google Drive. Instant legal evidence. From $29/month.",
   keywords: [
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sitesnap.vercel.app",
+    url: "https://sitesnapgps.com",
     siteName: "SiteSnap AI",
     title: "SiteSnap AI - Organize your site photos automatically",
     description: "Capture photos with GPS, organize them in YOUR Google Drive. Legal evidence for technicians. From $29/month.",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://sitesnap.vercel.app",
+    canonical: "https://sitesnapgps.com",
   },
 };
 
@@ -102,7 +102,7 @@ export default function RootLayout({
                 "ratingCount": "127"
               },
               "description": "App para técnicos e instaladores que organiza fotos de obra automáticamente en tu Google Drive con evidencia GPS.",
-              "screenshot": "https://sitesnap.ai/screenshot.png"
+              "screenshot": "https://sitesnapgps.com/screenshot.png"
             }),
           }}
         />
